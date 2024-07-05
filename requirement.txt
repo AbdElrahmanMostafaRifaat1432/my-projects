@@ -1,0 +1,6 @@
+streamlit_lottie
+streamlit
+requests
+Pillow
+protobuf==3.19.4
+watchdog
