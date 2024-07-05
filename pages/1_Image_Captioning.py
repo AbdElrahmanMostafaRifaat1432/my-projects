@@ -39,7 +39,7 @@ def dummy_image_captioning(image):
     return generated_caption
 
 # File uploader for images
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png" , "gif"])
 left_column, right_column = st.columns((1, 1))
     
 
