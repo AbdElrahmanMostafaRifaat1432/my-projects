@@ -8,17 +8,17 @@ from transformers import BlipProcessor, BlipForConditionalGeneration
 
 
 
-# Initialize the processor and model
-#processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
-#model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
+#Initialize the processor and model
+processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
+model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
 
-local_model_path = "/fine-tuned-model"
+# local_model_path = "/fine-tuned-model"
 
-# Load the model
-model = BlipForConditionalGeneration.from_pretrained(local_model_path , from_safetensors=True)
+# # Load the model
+# model = BlipForConditionalGeneration.from_pretrained(local_model_path , use_safetensors=True)
 
-# If you have a processor (e.g., tokenizer) to load
-processor = BlipProcessor.from_pretrained(local_model_path)
+# # If you have a processor (e.g., tokenizer) to load
+# processor = BlipProcessor.from_pretrained(local_model_path)
 
 st.set_page_config(page_title="Image Captioning", page_icon=":tada:", layout="wide")
 
