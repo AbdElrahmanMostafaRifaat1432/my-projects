@@ -15,7 +15,7 @@ from transformers import BlipProcessor, BlipForConditionalGeneration
 local_model_path = "/fine-tuned-model"
 
 # Load the model
-model = BlipForConditionalGeneration.from_pretrained(local_model_path)
+model = BlipForConditionalGeneration.from_pretrained(local_model_path , from_safetensors=True)
 
 # If you have a processor (e.g., tokenizer) to load
 processor = BlipProcessor.from_pretrained(local_model_path)
