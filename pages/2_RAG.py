@@ -126,7 +126,7 @@ answer the component parts, and then put them together to answer the broader que
     similarity = cosine_similarity([query_embedding], prompt_embeddings)[0]
     most_similar = prompt_templates[similarity.argmax()]
     # Chosen prompt 
-    st.write("Using physics prompt for decomposed question "+str(counter)+input['question'] if most_similar == physics_template else "Using math prompt for decomposed question "+str(counter)+input['question'])
+    st.write("Using physics prompt for decomposed question "+input['question'] if most_similar == physics_template else "Using math prompt for decomposed question "+input['question'])
     decomposition_prompt = PromptTemplate.from_template(most_similar)
     return decomposition_prompt
 
