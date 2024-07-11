@@ -14,3 +14,4 @@ torch==1.13.1
 transformers==4.42.0
 numpy < 2.0.0
 safetensors
+chromadb
