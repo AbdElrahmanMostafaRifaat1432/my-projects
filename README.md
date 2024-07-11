@@ -1,3 +1,5 @@
+# Overview and Deployment
+
  this is the link of the deployment on google I may close it because it cost money <br>
  https://image-captioning-service-ecdn2gcbaq-uc.a.run.app/Image_Captioning
 
@@ -18,7 +20,8 @@ This repository contains a Streamlit-based application that integrates Google Ge
 - **web link**: give it a link of a website to extract and split text.
 - **Vector Database**: Create a chroma vector database from the extracted text.
 - **Semantic Similarity Search**: Use Google Generative AI embeddings for semantic similarity search within the website link.
-- 
+- **Rag Decomposition**: decomposed the question into 2 questions so that the second question learn from the first question
+- **semantic Routing**: compare the similarity between query and prompt and choose the suitable prompt
 ### Running the Application
 
 To start the Streamlit application, run the following command:
