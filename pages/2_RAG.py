@@ -143,15 +143,17 @@ st.title("URL Content Fetcher")
 url = st.text_input("Enter the URL:").strip()
 
 button1 = st.button("Fetch Content")
+
 if button1 :
     if url:
+        with st.spinner('Fetching content...'):
 
-        if ('retriever' not in st.session_state) or (button1):
-            st.session_state.retriever = get_splits(url)
-            #st.session_state.question = st.text_input("Enter the question:")
-            #st.session_state.button2 = st.button("answer")
-        
-        #retriever = get_splits(url)
+            if ('retriever' not in st.session_state) or (button1):
+                st.session_state.retriever = get_splits(url)
+                #st.session_state.question = st.text_input("Enter the question:")
+                #st.session_state.button2 = st.button("answer")
+            
+            #retriever = get_splits(url)
 
 
 api_key = "AIzaSyDKlzT-aq7G6kT-ilENaX_HMfcZ149bnZw"
