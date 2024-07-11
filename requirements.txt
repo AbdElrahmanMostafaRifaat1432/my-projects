@@ -15,4 +15,4 @@ transformers==4.42.0
 numpy < 2.0.0
 safetensors
 chromadb == 0.5.3
-sqlite3
+#sqlite3
